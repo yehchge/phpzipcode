@@ -1,0 +1,80 @@
+body {
+    color: #222;
+    background-image: url(../static/bg.png);
+}
+
+p {
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+a {
+    color: #008500;
+}
+
+a:hover {
+    color: #00CC00;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#container > * {
+    background-color: hsla(0, 0%, 100%, 0.6);
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+#container footer {
+    margin-bottom: 0;
+}
+
+#container header {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#container header h1 {
+    font-size: 24px;
+}
+
+#container header nav {
+    font-size: 20px;
+    position: absolute;
+    /* same as header's padding */
+    right: 30px;
+    /* (header's rendered padding-height - nav's rendered header) / 2 */
+    top: 32.5px;
+}
+
+#container header nav li,
+#container .old-ie li {
+    display: inline;
+}
+
+#container header nav li {
+    /* half of font size*/
+    margin-left: 10px;
+}
+
+#container .old-ie {
+    /* text content */
+    background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+#container .old-ie img {
+    width: 120px;
+    padding: 0 28px;
+}
+
+#content-loader {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+{
+    "name": "zipcodetw/zipcodetw",
+    "description": "The ZIP Code Finder for Taiwan",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yehchge",
+            "email": "yehchge@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "twig/twig": "^2.0",
+        "slim/slim": "^3.12"
+    },
+    "autoload":{
+        "psr-0": {
+            "zipcodetw": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8888 -t public",
+        "setup": "php src/zipcodetw/setup.php install",
+        "test": "phpunit src/zipcodetw/zipcodetw_test.php"
+    }
+}
