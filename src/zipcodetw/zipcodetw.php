@@ -117,7 +117,7 @@ class Address {
             $token = @$this->tokens[$idx];
 
             $no1 = isset($token[Address::NO])?(int)$token[Address::NO]:0;
-            if($token[Address::SUBNO]){
+            if(isset($token[Address::SUBNO])){
                 $aNo2 = preg_split('//u', $token[Address::SUBNO], null, PREG_SPLIT_NO_EMPTY);
                 unset($aNo2[0]);
                 $no2 = join('',$aNo2);

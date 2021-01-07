@@ -1,2 +1,3 @@
 *.db
 vendor/*
+.phpunit.result.cache

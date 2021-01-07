@@ -57,9 +57,24 @@ Data
 
 The ZIP code directory is provided by Chunghwa Post, and is available from:
 http://www.post.gov.tw/post/internet/Download/all_list.jsp?ID=2201#dl_txt_s_A0206
+https://www.post.gov.tw/post/download/Zip32_10907.xls
+
+Troubleshooting
+---------------
+
+1. In Ubuntu, must instll php-sqlite3, Ex: sudo apt-get install php-sqlite3
+
 
 Changelog
 ---------
+
+v0.0.2
+~~~~~~
+
+1. 加入安裝時的問題排除.
+2. 加入 phpunit 設定檔.
+3. .phpunit.result.cache 加入忽略清單.
+4. 匯入新資料.
 
 v0.0.1
 ~~~~~~

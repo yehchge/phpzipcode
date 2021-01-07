@@ -502,6 +502,7 @@ class ZipcodeTWTest extends PHPUnit\Framework\TestCase {
             20243,基隆市,中正區,豐稔街,全
             20249,基隆市,中正區,觀海街,全
             36046,苗栗縣,苗栗市,大埔街,全
+            74146,臺南市,新市區,大順三路,全
             81245,高雄市,小港區,豐田街,全
             81245,高雄市,小港區,豐登街,全
             81245,高雄市,小港區,豐善街,全
@@ -563,6 +564,9 @@ EOF;
         $this->assertEquals($dir_->find('臺北市中正區'), '100');
         $this->assertEquals($dir_->find('臺北市中正區仁愛路１段'), '1005');
         $this->assertEquals($dir_->find('臺北市中正區仁愛路１段1號'), '10051');
+
+        # test_new_area
+        $this->assertEquals($dir_->find('台南市新市區三舍里大順三路125號'), '74146');
 
         # test_find_middle_token
         $this->assertEquals($dir_->find('左營區'), '813');
