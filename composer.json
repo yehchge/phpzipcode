@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "twig/twig": "^2.0",
+        "twig/twig": "^3.11",
         "slim/slim": "^3.12"
     },
     "autoload":{
